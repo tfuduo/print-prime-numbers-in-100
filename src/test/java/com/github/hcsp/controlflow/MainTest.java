@@ -1,6 +1,6 @@
-package com.github.hcsp;
+package com.github.hcsp.controlflow;
 
-import static org.hamcrest.Matchers.containsStringIgnoringCase;
+import static org.hamcrest.Matchers.containsString;
 
 import com.github.blindpirate.extensions.CaptureSystemOutput;
 import java.util.stream.IntStream;
@@ -13,7 +13,7 @@ public class MainTest {
     public void importStringUtilsCorrectly(CaptureSystemOutput.OutputCapture capture) {
         IntStream.range(0, 100)
                 .filter(Primes::isPrime)
-                .forEach(i -> capture.expect(containsStringIgnoringCase("" + i)));
+                .forEach(i -> capture.expect(containsString("" + i)));
         Main.printPrimeNumbers();
     }
 }
