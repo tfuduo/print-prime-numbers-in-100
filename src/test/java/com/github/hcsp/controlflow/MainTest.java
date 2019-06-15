@@ -1,9 +1,7 @@
 package com.github.hcsp.controlflow;
 
-import static org.hamcrest.Matchers.containsString;
-
 import com.github.blindpirate.extensions.CaptureSystemOutput;
-import java.util.stream.IntStream;
+import java.util.Stream.IntStream;
 import org.apache.commons.math3.primes.Primes;
 import org.junit.jupiter.api.Test;
 
