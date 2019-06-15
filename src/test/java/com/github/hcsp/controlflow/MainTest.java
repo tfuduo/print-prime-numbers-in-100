@@ -1,7 +1,7 @@
 package com.github.hcsp.controlflow;
 
 import com.github.blindpirate.extensions.CaptureSystemOutput;
-import java.util.Stream.IntStream;
+import java.util.stream.IntStream;
 import org.apache.commons.math3.primes.Primes;
 import org.junit.jupiter.api.Test;
 
