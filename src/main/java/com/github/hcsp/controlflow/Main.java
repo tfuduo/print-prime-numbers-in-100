@@ -10,5 +10,17 @@ public class Main {
      *
      * <p>提示：对于正整数n，如果用2到Math.sqrt(n)+1之间的所有整数去除，均无法整除，则n为质数。
      */
-    public static void printPrimeNumbers() {}
+    public static void printPrimeNumbers() {
+        for (int i = 1; i < 100; i++) {
+            boolean flag = true;
+            for (int j = 2; j < Math.sqrt(i) + 1; j++) {
+                if (i % j == 0){
+                    flag = false;
+                }
+            }
+            if (flag){
+                System.out.println(i);
+            }
+        }
+    }
 }
