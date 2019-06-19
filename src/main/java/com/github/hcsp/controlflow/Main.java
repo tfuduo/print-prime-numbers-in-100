@@ -1,7 +1,5 @@
 package com.github.hcsp.controlflow;
 
-import java.util.ArrayList;
-
 public class Main {
     public static void main(String[] args) {
         printPrimeNumbers();
@@ -12,26 +10,5 @@ public class Main {
      *
      * <p>提示：对于正整数n，如果用2到Math.sqrt(n)+1之间的所有整数去除，均无法整除，则n为质数。
      */
-    public static void printPrimeNumbers() {
-        int num;
-
-        for (num = 2;
-             num < 100;
-             num++) {
-            boolean isPrime = true;
-            int j = (int) (Math.sqrt(num) + 1);
-
-            for (int i = 2;
-                 i < j;
-                 i++) {
-                if (num % i == 0) {
-                    isPrime = false;
-                    break;
-                }
-            }
-            if (isPrime) {
-                System.out.println(num);
-            }
-        }
-    }
+    public static void printPrimeNumbers() {}
 }
